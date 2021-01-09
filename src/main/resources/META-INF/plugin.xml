@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>com.github.bisgardo.intellij.closebrace</id>
+    <name>Close Brace</name>
+    <vendor>Michael Bisgaard Olesen</vendor>
+
+    <!-- Product and plugin compatibility requirements -->
+    <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+    <actions>
+        <action
+                id="insert_brace"
+                class="com.github.bisgardo.intellij.closebrace.InsertClosingBraceAction"
+                text="Insert Closing Brace"
+                description="Find and close last unmatched opening brace ('(', '[', '{', or '&lt;') before the current caret."
+        >
+            <keyboard-shortcut first-keystroke="alt P" keymap="$default"/>
+        </action>
+        <!-- TODO Add action for just highlighting the match. -->
+    </actions>
+</idea-plugin>
