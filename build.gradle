@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.github.halleknast'
-version '1.0-SNAPSHOT'
+version '0.1.0'
 
 // See 'https://intellij-support.jetbrains.com/hc/en-us/community/posts/360009768820-Plugin-build-fails-on-IJ-2020-2-3-EAP'.
 // Grade JVM is specified in settings under "Gradle".

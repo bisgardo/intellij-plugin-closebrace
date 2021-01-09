@@ -3,6 +3,10 @@
     <name>Close Brace</name>
     <vendor>Michael Bisgaard Olesen</vendor>
 
+    <description>
+        Find and close last unmatched opening brace ('(', '[', '{', or '&lt;') before the current caret.
+    </description>
+
     <!-- Product and plugin compatibility requirements -->
     <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
@@ -11,7 +15,6 @@
                 id="insert_brace"
                 class="com.github.bisgardo.intellij.closebrace.InsertClosingBraceAction"
                 text="Insert Closing Brace"
-                description="Find and close last unmatched opening brace ('(', '[', '{', or '&lt;') before the current caret."
         >
             <keyboard-shortcut first-keystroke="alt P" keymap="$default"/>
         </action>
