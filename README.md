@@ -1,6 +1,6 @@
 # intellij-plugin-closebrace
 
-Plugin for finding and close last unmatched opening brace (`(`, `[`, `{`, or `<`) before the current caret.
+IntelliJ Plugin for finding the last unmatched opening brace (`(`, `[`, `{`, or `<`) before the current caret and closing it at the caret.
 
 ## Install
 
@@ -35,9 +35,6 @@ x(y[z])|
 ### Unmatched end braces
 
 Any unmatched closing braces are ignored:
-
-*Example*
-
 ```
 x(yz]|
 ```
@@ -47,9 +44,6 @@ x(yz])|
 ```
 
 The same thing goes for closing braces after the caret:
-
-*Example*
-
 ```
 x(y|z)
 ```
