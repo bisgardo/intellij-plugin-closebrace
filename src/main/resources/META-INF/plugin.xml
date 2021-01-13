@@ -4,7 +4,9 @@
     <vendor>Michael Bisgaard Olesen</vendor>
 
     <description>
-        Find and close last unmatched opening brace ('(', '[', '{', or '&lt;') before the current caret.
+        Find and close last unmatched opening brace ('(', '[', '{', or '&lt;') at the current caret.
+
+        The plugin defines the action "Insert Closing Brace" which by default is bound to Alt-P.
     </description>
 
     <!-- Product and plugin compatibility requirements -->
@@ -18,6 +20,8 @@
         >
             <keyboard-shortcut first-keystroke="alt P" keymap="$default"/>
         </action>
+        <!-- TODO Add action for doing the same this forwards. -->
+        <!-- TODO Add tests. -->
         <!-- TODO Add action for just highlighting the match. -->
     </actions>
 </idea-plugin>

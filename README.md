@@ -1,6 +1,7 @@
 # intellij-plugin-closebrace
 
-IntelliJ Plugin for finding the last unmatched opening brace (`(`, `[`, `{`, or `<`) before the current caret and closing it at the caret.
+IntelliJ Plugin for finding the last unmatched opening brace (`(`, `[`, `{`, or `<`) before the current caret
+and closing it at the caret.
 
 ## Install
 
@@ -9,13 +10,13 @@ Invoke the gradle task `buildPlugin`:
 ./gradlew buildPlugin
 ```
 
-This builds the plugin into `build/distributions/intellij-plugin-closebrace-<version>.zip`.
+This outputs the plugin in file `build/distributions/intellij-plugin-closebrace-<version>.zip`.
 
 In Settings > Plugins, select "Install Plugin from Disk..." from the gear symbol and select the file above.
 
 ## Usage
 
-The default key binding for the action is `Alt-p`.
+The default key binding for the action is `Alt-P`.
 
 *Example*
 
@@ -27,14 +28,14 @@ After invoking the action once, this has changed to
 ```
 x(y[z]|
 ```
-Invoking it again makes it
+Invoking it again results in
 ```
 x(y[z])|
 ```
 
-### Unmatched end braces
+### Unmatched closing braces
 
-Any unmatched closing braces are ignored:
+Any unmatched closing braces are ignored, so
 ```
 x(yz]|
 ```
@@ -43,7 +44,7 @@ becomes
 x(yz])|
 ```
 
-The same thing goes for closing braces after the caret:
+The same thing goes for closing braces after the caret; i.e.
 ```
 x(y|z)
 ```
@@ -51,4 +52,3 @@ becomes
 ```
 x(y)|z)
 ```
-
