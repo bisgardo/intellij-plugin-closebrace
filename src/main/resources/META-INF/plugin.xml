@@ -20,8 +20,16 @@
         >
             <keyboard-shortcut first-keystroke="alt P" keymap="$default"/>
         </action>
-        <!-- TODO Add action for doing the same this forwards. -->
-        <!-- TODO Add tests. -->
+        <action
+                id="insert_brace-inverted"
+                class="com.github.bisgardo.intellij.closebrace.InsertOpeningBraceAction"
+                text="Insert Closing Brace"
+        >
+            <keyboard-shortcut first-keystroke="alt shift P" keymap="$default"/>
+        </action>
+        <!-- TODO Add action for jumping to the first/last (in the document) location where it would be correct
+                  to close the first occurrence of an unmatched brace. -->
         <!-- TODO Add action for just highlighting the match. -->
+        <!-- TODO Add tests. -->
     </actions>
 </idea-plugin>
